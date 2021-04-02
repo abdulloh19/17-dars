@@ -1,0 +1,39 @@
+.header__intro {
+    display: flex;
+}
+  
+  .header__img {
+    margin-right: auto;
+    padding-top: 15px;
+}
+.header__list {
+  display: flex;
+}
+
+  .header__list-item{
+    font-size: 13px;
+    @include font;
+  }
+
+  .header__link {
+    color: #83888F;
+    font-weight: bold;
+    padding: 7px 10px;
+
+    &:hover {
+      background-color: #a4a7aa;
+      color: #fff;
+      padding: 7px 10px;
+  }
+  
+}
+
+@media screen and (max-width: 7 00px) {
+  .header__list-item{
+    font-size: 12px;
+  }
+  .header__list{
+    margin-left: 170px;
+  }
+
+}

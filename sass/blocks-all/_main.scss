@@ -1,0 +1,150 @@
+.main {
+    margin-top: 50px;
+}
+.main__container {
+    background: url("../../img/Bitmap.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.main__subject {
+    color: #fff;
+    width: 412px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.main__snippet {
+    padding-top: 100px;
+    padding-left: 169px;
+    padding-bottom: 110px;
+}
+
+.main__text {
+    color: #fff;
+    width: 398px;
+    margin-bottom: 56px;
+    @include font;
+    opacity: 0.6;
+}
+
+.main__link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0E8784;
+    padding: 15px 31px;
+    margin-top: 40px;
+    display: block;
+    width: 217px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    margin-left: 0;
+
+    &:hover{
+        color: #FEFCF7;
+        background-color: #66D2CF;
+    }
+}
+
+.main__snippet-text {
+    width: 1170px;
+    height: 196px;
+    color: #83888F;
+    font-size: 160px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: -125px;
+    line-height: 130px;
+    opacity: 0.2;
+    position: relative;
+    background: linear-gradient(#83888F, #fafafc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__content {
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+}
+
+.main__list {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    padding-left: 40px;
+    margin-top: 250px;
+    flex-wrap: wrap;
+}
+
+.main-list__item {
+    width: 255px;
+    height: 134px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &:first-child {
+    margin: 0;
+}
+}
+
+.main-list__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    order: 2;
+}
+
+.main-list__snippet {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    @include font;
+}
+
+.main-item__pic {
+    order: 3;
+    z-index: 2;
+    align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .main__snippet{
+    }
+
+    .main__subject{
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .main__snippet-text{
+        width: 686px;
+        font-size: 96px;
+        line-height: 72px;
+    }
+
+    .main__list {
+        flex-direction: column;
+        top: -100;
+        width: 689px;
+    }
+    .main-list__item {
+        display: flex;
+        height: 340px;
+
+    }
+    
+    .main__content-wrap{
+     display: flex;
+     flex-direction: column-reverse;
+    }
+}
