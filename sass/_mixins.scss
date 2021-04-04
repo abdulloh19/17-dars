@@ -1,3 +1,8 @@
 @mixin font {
     font-family: "barlow"
 }
+@mixin befor{
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+}

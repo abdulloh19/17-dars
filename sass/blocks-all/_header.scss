@@ -1,39 +1,103 @@
 .header__intro {
-    display: flex;
+  display: flex;
 }
-  
-  .header__img {
-    margin-right: auto;
-    padding-top: 15px;
+.header{
+
 }
+
+.header__img {
+  padding-top: 15px;
+  margin-right: auto;
+}
+
 .header__list {
   display: flex;
 }
 
-  .header__list-item{
-    font-size: 13px;
-    @include font;
-  }
-
-  .header__link {
-    color: #83888F;
-    font-weight: bold;
-    padding: 7px 10px;
-
-    &:hover {
-      background-color: #a4a7aa;
-      color: #fff;
-      padding: 7px 10px;
-  }
-  
+.header__list-item {
+  font-size: 13px;
+  @include font;
 }
 
-@media screen and (max-width: 7 00px) {
-  .header__list-item{
-    font-size: 12px;
-  }
-  .header__list{
-    margin-left: 170px;
+.header__link {
+  color: #83888F;
+  font-weight: bold;
+  padding: 7px 10px;
+
+  &:hover {
+    background-color: #a4a7aa;
+    color: #fff;
+    padding: 7px 10px;
   }
 
+}
+
+@media screen and (max-width: 1280px) {
+
+  .header__list-item {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 689px) {
+  
+  .header {
+    position: relative;
+  }
+  .header__img img{
+    width: 163px;
+  }
+  .header__intro{
+    width: 327px;
+  }
+
+  .header__nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    height: calc(100vh - 464px);
+  }
+
+  .header__nav::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: Linear-Gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #fefcf7 55.94%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .header__nav--active {
+    display: block;
+  }
+
+  .header__list {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    padding-top: 80px;
+    z-index: 2;
+  }
+
+  .header__list-item{
+    padding: 32px;
+    font-weight: 900;
+    font-family: "Fraunces 9pt";
+
+  }
+  .header__link{
+    font-size: 24px;
+    color: #333D4B;
+    &:hover{
+      color: red;
+      background-color: coral;
+    }
+  }
 }

@@ -1,8 +1,9 @@
 .main {
     margin-top: 50px;
 }
+
 .main__container {
-    background: url("../../img/Bitmap.jpg") no-repeat center center;
+    background: url("../../img/desktop.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -44,7 +45,7 @@
     line-height: 25px;
     margin-left: 0;
 
-    &:hover{
+    &:hover {
         color: #FEFCF7;
         background-color: #66D2CF;
     }
@@ -52,19 +53,19 @@
 
 .main__snippet-text {
     width: 1170px;
-    height: 196px;
     color: #83888F;
     font-size: 160px;
     font-weight: 900;
     text-align: center;
     margin-bottom: -125px;
     line-height: 130px;
-    opacity: 0.2;
+    opacity: 1;
     position: relative;
-    background: linear-gradient(#83888F, #fafafc);
+    background: linear-gradient(#adadad, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .main__content {
     background-color: transparent;
@@ -83,14 +84,10 @@
 
 .main-list__item {
     width: 255px;
-    height: 134px;
-    margin-left: 30px;
+    margin-left: 25px;
+    margin-top: -180px;
     display: flex;
     flex-direction: column-reverse;
-
-    &:first-child {
-    margin: 0;
-}
 }
 
 .main-list__title {
@@ -116,35 +113,126 @@
 }
 
 @media screen and (max-width: 1280px) {
-
-    .main__snippet{
+    .main__container {
+        background: url("../../img/hero-bg-tablet.jpg") no-repeat center center;
+        background-size: cover;
     }
 
-    .main__subject{
+    .main-list__snippet {
+        margin-left: 192px;
+        width: 282px;
+        margin-top: -10px;
+
     }
 
-}
+    .main__snippet {
+        margin-left: -109px;
+    }
 
-@media screen and (max-width: 1280px) {
-    .main__snippet-text{
+    .main-list__title {
+        margin-left: 192px;
+        width: 282px;
+    }
+
+    .main__snippet-text {
         width: 686px;
-        font-size: 96px;
+        font-size: 105px;
         line-height: 72px;
+
     }
 
     .main__list {
         flex-direction: column;
-        top: -100;
+        margin-top: 45%;
         width: 689px;
+        margin-left: 90px;
     }
+
     .main-list__item {
         display: flex;
-        height: 340px;
+        flex-direction: row-reverse;
+        margin-bottom: 240px;
 
+
+        &:nth-child(4) {
+            margin-bottom: 144px;
+        }
     }
-    
+
+    .main-item__pic {
+        margin-right: -190px;
+        width: 282px;
+
+        &:last-child {
+            margin-top: -10px;
+        }
+    }
+
+    .main__content-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 282px;
+        text-align: left;
+        height: 106px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .main__container {
+        background: url("../../img/hero-bg-mobile.jpg") no-repeat center center;
+        background-size: cover;
+        width: 327px;
+        border-radius: 10px;
+    }
+
+    .main__subject {
+        width: 279px;
+        margin-left: -30px;
+        font-size: 40px;
+    }
+
+    .main__text {
+        width: 279px;
+        font-size: 15px;
+        margin-left: -30px;
+    }
+
+    .main__snippet {
+        text-align: center;
+    }
+
+    .main__snippet-text {
+        width: 286px;
+        font-size: 40px;
+        line-height: 72px;
+        opacity: 0.8;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .main-list__item {
+        flex-direction: column-reverse;
+
+        &:nth-child(4){
+            margin-bottom: 0;
+        }
+    }
+
+    .main-item__pic {
+        margin-left: 227px;
+    }
+    .main__list{
+        width: 375px;
+        margin-left: -82%;
+        margin-top: 115%;
+    }
     .main__content-wrap{
-     display: flex;
-     flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-list__title{
+        color: #333D4B;
+        font-weight: 900;
+        text-align: center;
     }
 }
