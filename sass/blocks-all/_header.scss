@@ -46,7 +46,7 @@
     position: relative;
   }
   .header__img img{
-    width: 163px;
+    max-width: 163px;
   }
   .header__intro{
     width: 327px;
@@ -59,7 +59,7 @@
     top: 100%;
     left: 0;
     z-index: 3;
-    height: calc(100vh - 464px);
+    height: calc(100vh - 30px);
   }
 
   .header__nav::before{
@@ -87,7 +87,7 @@
   }
 
   .header__list-item{
-    padding: 32px;
+    padding-bottom: 32px;
     font-weight: 900;
     font-family: "Fraunces 9pt";
 
@@ -95,6 +95,7 @@
   .header__link{
     font-size: 24px;
     color: #333D4B;
+    
     &:hover{
       color: red;
       background-color: coral;

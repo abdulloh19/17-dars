@@ -22,17 +22,16 @@
     color: #fff;
     text-align: center;
     width: 540px;
-    margin: auto;
     font-family: "barlow";
+   margin: 0 auto;
     opacity: 0.6;
 }
 
-.section_list {
+.section__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 50px;
-    margin-right: 55px;
+    margin-right: 70px;
 }
 
 
@@ -79,19 +78,19 @@
 }
 
 .section__item-title--icon::before {
-    background: url("../../img/coffee-bean.svg") no-repeat center center;
+    background: url("../img/coffee-bean.svg") no-repeat center center;
     top: 72px;
     left: 135px;
 }
 
 .section__item-title--icons::before {
-    background: url("../../img/Combined-Shape2.svg") no-repeat center center;
+    background: url("../img/Combined-Shape2.svg") no-repeat center center;
     top: 72px;
     left: 135px;
 }
 
 .section__item-title--free::before {
-    background: url("../../img/Combined-Shape1.svg") no-repeat center center;
+    background: url("../img/Combined-Shape1.svg") no-repeat center center;
     z-index: 2;
     top: 83px;
     left: 135px;
@@ -99,15 +98,10 @@
 
 @media screen and (max-width: 1280px) {
     .section__item-title {
-        width: 573px;
-        padding-left: 140px;
+        width: 100%;
         padding: 41px 48px 41px 181px;
         margin-bottom: 20px;
         padding-top: 0;
-    }
-
-    .section__wrapper {
-        margin-top: -35px;
     }
 
     .section__text {
@@ -116,38 +110,36 @@
     }
 
     .section__intro {
-        width: 540px;
-        padding-left: 82px;
         padding-top: 55px;
     }
 
-    .section__heading {
-        margin-left: 85px;
-    }
-
     .section__subtitle {
-        width: 344px;
         text-align: left;
+        width: 100%;
     }
 
     .section__caption {
-        width: 255px;
         text-align: left;
     }
 
     .section__item-title--icon::before {
+        top: 50px;
         left: 55px;
 
     }
 
     .section__item-title--icons::before {
+        top: 45px;
         left: 55px;
     }
     .section__item-title--free::before {
+        top: 50px;
         left: 55px;
     }
+    
 
 }
+
 
 @media screen and (max-width: 689px) {
     .section__bgc{
@@ -157,49 +149,51 @@
     .section__wrapper{
         margin-top: 0;
     }
-    .section__intro{
-        width: 279px;
-    }
     .section__heading{
-        width: 279px;
         font-size: 28px;
         font-weight: 900;
-        margin-left: -50px; 
     }
     .section__text{
-        width: 279px;
         font-weight: 400;
         font-size: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 100%;
+    }
+    .section__list{
+        padding: 0;
         align-items: center;
-        margin-left: -50px;
+        justify-content: center;
     }
     .section__item-title{
-        width: 279px;
-        height: 382px;
         flex-direction: column;
+        max-width: 100%;
+        padding-left: 0;
+        margin-left: 70px;
+        align-items: center;
+        justify-content: center;
     }
     .section__caption{
-        width: 255px;
         text-align: center;
         padding-top: 135px;
-        margin-left: -160px;
-
     }
     .section__subtitle{
-        width: 212px;
-        margin-left: -140px;
         text-align: center;
+        align-items: center;
+        margin-left: 25px;
+        width: 100%;
+        font-size: 15px;
     }
     .section__item-title--icon::before{
         top: 35px;
-        left: 103px;
+        left: 90px;
     }
     .section__item-title--icons::before{
         top: 35px;
-        left: 103px;
+        left: 90px;
     }
     .section__item-title--free::before{
         top: 35px;
-        left: 103px;
+        left: 90px;
     }
 }

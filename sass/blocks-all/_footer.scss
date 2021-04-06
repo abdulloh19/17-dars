@@ -47,14 +47,15 @@
         font-weight: 500;
     }
 }
+.footer__item a img{
+    padding-left: 24px;
+}
 
 
 .footer__picters {
-    padding-left: 24px;
 
     &:hover {
-        color: #fff;
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 }
 
@@ -62,11 +63,15 @@
     padding: 55px;
     margin-right: 85px;
     align-items: center;
+    display: flex;
 }
 
 @media screen and (max-width: 1280px) {
     .footer {
         margin-top: 140px;
+    }
+    .footer__img{
+        padding-bottom: 10px;
     }
 
     .footer__container {
@@ -74,7 +79,7 @@
     }
 
     .footer__wrapper {
-        width: 283px;
+        // width: 283px;
         align-items: center;
         flex-wrap: wrap;
         margin-left: 90px;
@@ -82,66 +87,72 @@
     }
 
     .footer__links {
-        width: 236px;
-        height: 26px;
-        padding-top: 24px;
+        // height: 26px;
     }
 
     .footer__list {
-        width: 320px;
+        // width: 320px;
         text-align: center;
-        padding-top: 32px;
+        // padding-top: 32px;
+        padding-left: 15px;
     }
 
     .footer__wrapp {
         display: flex;
-        margin-top: -55px;
-        margin-left: 45%;
+        // margin-top: -55px;
+        // margin-left: 45%;
+        margin-left: 175px;
+        padding: 0;
+        padding-top: 30px;
     }
 
     .footer__nav {
-        margin-left: -20px;
-        width: 283px;
-        padding-right: 32px;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: $mobile) {
-    .footer__wrapper {
-        width: 327px;
-    }
 
     .footer__links {
-        width: 217px;
-        margin-left: -55%;
-        margin-top: -100%;
+
+    }
+    .footer__img{
+        padding: 0;
+        padding-top: 40px;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-left: -45px;
     }
 
     .footer__list {
-        width: 122px;
+        // width: 122px;
         flex-direction: column;
-        margin-left: -30px;
-        text-align: center;
+        // margin-left: -30px;
+        // text-align: center;
         align-items: center;
     }
     .footer__nav-link{
-        width: 64px;
+        // width: 64px;
         font-size: 12px;
+    }
+    .footer__list{
+        margin: 0;
+        padding: 0;
     }
     .footer__nav-list{
         padding-bottom: 20px;
 
         &:nth-child(2){
-            width: 64px;
+            // width: 64px;
         }
 
         &:last-child{
-            width: 121px;
+            // width: 121px;
         }
     }
     .footer__wrapp{
-        margin-left: -60px;
-        margin-top: -110px;
-        width: 120px;
+        margin: 0;
+        padding-top: 10px;
+        margin-left: -12px;
     }
 }
