@@ -7,11 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Cofeechilar sayti
-        
+
     </title>
 </head>
 
 <body>
+    <div style="display: none;">
+        <svg width="0" height="0" class="hidden">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="twitter">
+              <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"></path>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"></path>
+          </svg>
+    </div>
     <header class="header">
         <div class="container">
             <h1 class="visually-hidden">cofechilar</h1>
@@ -23,10 +35,10 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__list-item">
-                            <a class="header__link" href="#">HOME</a>
+                            <a class="header__link header__link--active" href="#">HOME</a>
                         </li>
                         <li class="header__list-item">
-                            <a class="header__link" href="#">ABOUT US</a>
+                            <a class="header__link" href="about.html">ABOUT US</a>
                         </li>
                         <li class="header__list-item">
                             <a class="header__link" href="#">CREATE YOUR PLAN</a>
@@ -72,7 +84,7 @@
                         <p class="main__list-snippet ">Mild and smooth blend featuring notes of toasted almond and dried
                             cherry.</p>
                     </div>
-                    <img class="main__item-pic" src="./img/kopi3.png" height="193"  alt="">
+                    <img class="main__item-pic" src="./img/kopi3.png" height="193" alt="">
                 </li>
                 <li class="main__list-item">
                     <div class="main__content-wrap">
@@ -93,32 +105,32 @@
                         featured
                         in our range. This means working closely with the best coffee growers to give
                         you a more impactful experience on every level.</p>
-                    </div>
-                    <div class="section__wrapper">
-                        <ul class="section__list">
-                            <li class="section__item-title section__item-title--icon">
-                                <h3 class="section__caption">Best quality</h3>
-                                <p class="section__subtitle">Discover an endless variety of the world’s best artisan
-                                    coffee from each of our roasters.</p>
-                            </li>
-                            <li class="section__item-title section__item-title--icons">
-                                <h3 class="section__caption">Exclusive benefits</h3>
-                                <p class="section__subtitle">Special offers and swag when you subscribe, including
-                                    30% off your first shipment.</p>
-                            </li>
-                            <li class="section__item-title section__item-title--free">
-                                <h3 class="section__caption">Free shipping</h3>
-                                <p class="section__subtitle">We cover the cost and coffee is delivered fast. Peak
-                                    freshness: guaranteed.</p>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="section__wrapper">
+                    <ul class="section__list">
+                        <li class="section__item-title section__item-title--icon">
+                            <h3 class="section__caption">Best quality</h3>
+                            <p class="section__subtitle">Discover an endless variety of the world’s best artisan
+                                coffee from each of our roasters.</p>
+                        </li>
+                        <li class="section__item-title section__item-title--icons">
+                            <h3 class="section__caption">Exclusive benefits</h3>
+                            <p class="section__subtitle">Special offers and swag when you subscribe, including
+                                30% off your first shipment.</p>
+                        </li>
+                        <li class="section__item-title section__item-title--free">
+                            <h3 class="section__caption">Free shipping</h3>
+                            <p class="section__subtitle">We cover the cost and coffee is delivered fast. Peak
+                                freshness: guaranteed.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <div class="container wrapper-container">
-            <div class="wrapper">
-                <p class="wrapper__how">How it works</p>
+        <section class="wrapper">
+            <div class="container">
+                <h2 class="wrapper__how">How it works</h2>
                 <div class="wrapper__intro">
                     <span class="wrapper__span-1 "></span>
                     <span class="wrapper__wrapp"></span>
@@ -126,61 +138,69 @@
                     <span class="wrapper__wrapp"></span>
                     <span class="wrapper__span-3"></span>
                 </div>
-            
 
-            <ul class="wrapper__list-wrap">
-                <li class="wrapper__item wrapper__item--item1">
-                    <p class="wrapper__title">Pick your coffee</p>
-                    <p class="wrapper__subtitle">Select from our evolving range of artisan coffees. Our beans
+
+                <ul class="wrapper__list-wrap">
+                    <li class="wrapper__item wrapper__item--item1">
+                        <p class="wrapper__title">Pick your coffee</p>
+                        <p class="wrapper__subtitle">Select from our evolving range of artisan coffees. Our beans
                             are ethically sourced and we pay fair prices for them. There are new coffees in all
-                        profiles every month for you to try out.</p>
-                </li>
-                <li class="wrapper__item wrapper__item--item2">
-                    <p class="wrapper__title">Choose the frequency</p>
-                    <p class="wrapper__subtitle">Customize your order frequency, quantity, even your roast
-                        style and grind type. Pause, skip or cancel your subscription with no commitment through
-                        our.</p>
-                </li>
-                <li class="wrapper__item wrapper__item--item3">
-                    <p class="wrapper__title">Receive and enjoy!</p>
-                    <p class="wrapper__subtitle">We ship your package within 48 hours, freshly roasted. Sit
-                        back and enjoy award-winning world-class coffees curated to provide a distinct tasting
-                        experience.</p>
-                </li>
-            </ul>
-            <a class="wrapper__link-wrap" href="#">Create your plan</a>
-        </div>
-        </div>
+                            profiles every month for you to try out.</p>
+                    </li>
+                    <li class="wrapper__item wrapper__item--item2">
+                        <p class="wrapper__title">Choose the frequency</p>
+                        <p class="wrapper__subtitle">Customize your order frequency, quantity, even your roast
+                            style and grind type. Pause, skip or cancel your subscription with no commitment through
+                            our.</p>
+                    </li>
+                    <li class="wrapper__item wrapper__item--item3">
+                        <p class="wrapper__title">Receive and enjoy!</p>
+                        <p class="wrapper__subtitle">We ship your package within 48 hours, freshly roasted. Sit
+                            back and enjoy award-winning world-class coffees curated to provide a distinct tasting
+                            experience.</p>
+                    </li>
+                </ul>
+                <a class="wrapper__link-wrap" href="#">Create your plan</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__wrapper">
-                <a class="footer__links" href="#"><img class="footer__img" src="./img/group5.svg" alt=""></a>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__nav-list">
-                            <a class="footer__nav-link" href="#">HOME</a>
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <a class="footer__links" href="#"><img class="footer__img" src="./img/group5.svg" alt=""></a>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__nav-list">
+                                <a class="footer__nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="footer__nav-list">
+                                <a class="footer__nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="footer__nav-list">
+                                <a class="footer__nav-link" href="#"> Create your plan</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="footer__wrapp">
+                        <li class="footer__item">
+                            <a class="footer__picters"> <svg class="footer__svg-img" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a>
                         </li>
-                        <li class="footer__nav-list">
-                            <a class="footer__nav-link" href="#">ABOUT US</a>
+                        <li class="footer__item">
+                            <a class="footer__picters" href="#"><svg class="footer__svg-img" width="24" height="20">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a>
                         </li>
-                        <li class="footer__nav-list">
-                            <a class="footer__nav-link" href="#"> Create your plan</a>
+                        <li class="footer__item">
+                            <a class="footer__picters" href="#"><svg class="footer__svg-img" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="footer__wrapp">
-                    <li class="footer__item">
-                        <a class="footer__picters" href="#"><img src="./img/facebook.svg" alt=""></a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__picters" href="#"><img src="./img/twitter.svg" alt=""></a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__picters" href="#"><img src="./img/instagram.svg" alt=""></a>
-                    </li>
-                </ul>
+                </div>
             </div>
 
         </div>

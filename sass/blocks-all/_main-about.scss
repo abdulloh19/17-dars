@@ -1,0 +1,44 @@
+.about{
+    background: url("../img/aboutUs.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.about__wrapper{
+    padding-top: 135px;
+    padding-left: 85px;
+    padding-bottom: 137px;
+}
+.about__us{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 900;
+    color: #FEFCF7;
+}
+.about__cofee{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "barlow";
+    font-weight: 400;
+    color: #FEFCF7;
+    opacity: 0.7;
+    width: 445px;
+}
+@media screen and (max-width: 1280px)
+{
+    .about__us{
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .about__wrapper
+    {
+        padding: 111px 24px 87px 24px;
+    }
+    .about__cofee
+    {
+        text-align: center;
+        width: auto;
+    }
+    
+}

@@ -6,10 +6,7 @@ burger.addEventListener("click", function() {
     burger.classList.toggle("hamburger--active")
 });
 
-// var burger = document.querySelector(".hamburgers");
-// var footer = document.querySelector("footer__nav");
-
-// burger.addEventListener("click", function () {
-//     footer.classList.toggle("footer__nav--active");
-//     burger.classList.toggle("hamburgers--active")
-// });
+window.addEventListener ("scroll", function(){
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
